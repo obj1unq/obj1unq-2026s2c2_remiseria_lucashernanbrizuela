@@ -30,7 +30,7 @@ Si tiene el caño de escape silencioso la velocidad máxima es de 115 km/h.
 Si tiene un tanque extra la velocidad máxima es de 80 km/h. 
 Si lleva transportador de sillas de ruedas la velocidad máxima es de 90 km/h. 
 
-Por lo tanto, la velocidad máxima de un vehículo económico es el número menor que exige alguna de sus adaptaciones: Un vehículo que posee las 3 adaptaciones irá a 80 km/h, uno que tiene solo el escape iría a 115 km/h. Mientra que si no tiene escape iría a 120 km/h   
+Por lo tanto, la velocidad máxima de un vehículo económico es el número menor que exige alguna de sus adaptaciones: Un vehículo que posee las 3 adaptaciones irá a 80 km/h, uno que0 tiene solo el escape iría a 115 km/h. Mientra que si no tiene escape iría a 120 km/h   
 
 Un vehículo base de estos no puede llevar una silla de ruedas. Solo puede llevarlo si contiene alguna adaptación que lo permita. La única es el *transportador de sillas de rueda*. Ni el tanque extra ni el caño de escape silencioso influye.
 
@@ -123,19 +123,23 @@ Considerar los siguientes vehículos. Se utilizan nombres de fantasía porque de
     - No Puede llevar sillas de ruedas
     - Es ruidoso
 
+
+
+
 ## 2. Reservas
 
 Una reserva es una solicitud de un viaje.
  Se realiza indicando la cantidad de personas a llevar, la distancia a recorrer, el tiempo máximo de viaje en horas. 
+ 
  Además dado que esta cooperativa considera la sensibilidad cromática y las neurodivergencias, en la solicitud se pueden indicar:
  - colores que estan contraindicados para alguna de las personas que viajan
  - la necesidad de un auto que no sea ruidoso
  - necesidad de transportar silla de ruedas.
 
 ### Requerimiento:
-Saber si una reserva puede ser cumplida por un vehículo. Para lo cual tiene que cumplirse todas estas condiciones:
+Saber si una reserva puede ser cumplida por un vehículo. Para lo cual tiene que cumplirse todas estas condiciones: 
 - El vehículo debe tener una capacidad igual o superior a la indicada en la reserva
-- El vehículo debe tener una autonomía igual o superior a la indicada en la reserva
+- El vehículo debe tener una autonomía igual o superior a la indicada en la reserva //OJO
 - La velocidad máxima del vehículo supere a la velocidad promedio que necesita el viaje (calculada como distancia a recorrer / tiempo máximo) en al menos 10 km/h. Por ejemplo, un viaje de 300 km en 3 hs tiene como velocidad promedio 100 km/h, sumados a los 10 km/h de margen de error, exige que el vehículo tenga como velocidad máxima 110 km/h o más.
 - El vehiculo debe ser respetuoso para las necesidades de los pasajeros del viaje:
   - si se indicaron colores contraindicados, el vehículo no sea de ese color
@@ -155,6 +159,8 @@ Dada una reserva de 5 personas, 480 km de distancia y 4 horas de viaje, que nece
 Una reserva de 5 personas, 200 km de distancia y 2 horas de viaje.
 
   Probar que esta reserva **no puede** ser cumplida por reyDeCopas (capacidad insuficiente).
+
+
 
 #### Reserva que falla por autonomía insuficiente
 Una reserva de 5 personas, 195 km de distancia y 2 horas de viaje.
