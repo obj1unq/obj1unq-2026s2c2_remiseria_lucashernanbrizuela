@@ -1,0 +1,24 @@
+
+REFLEXCION
+
+
+¿Da igual que las colecciones de flotas y viajes en la sucursal sean listas o conjuntos?
+Si piensas que no, cambia una implementación
+por la otra y revisa el resultado.
+
+No, no da igual (cambie de conjunto a lista y dio igual)
+
+¿Dónde se instancia un viaje, dentro o fuera de la clase Sucursal?. Pensar como sería la alternativa.
+
+Un viaje sse instancia dentro de la clase Sucursal.
+Una alternativa seria que cada viaje
+
+¿La combi es un objeto autodefinido o una instancia de clase?
+ ¿Se puede usar la otra variante indistintamente?
+
+La combi es un objeto autodefinido. No, no puede ser una instancia de una clase porque la cambi
+es un objeto irrepetible que no comparte atributos con nadie
+
+Dibujar el diagrama dinámico que muestra el estado final del último test.
+
+Dibujar con un diagrama estático la relación entre los tipos Viaje, Reserva y Vehículo (y las entidades que las implementan).
